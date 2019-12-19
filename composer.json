@@ -1,0 +1,18 @@
+{
+    "name": "fts/fuck-magento",
+    "description": "Fix the bug with query parameters when category suffix is forward slash",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+      "LGPL-3.0-or-later"
+    ],
+    "require": {
+      "magento/module-url-rewrite": "101.1.3"
+    },
+    "autoload": {
+      "files": [ "registration.php" ],
+      "psr-4": {
+        "FTS\\FixTrailingSlash\\": ""
+      }
+    }
+  }
